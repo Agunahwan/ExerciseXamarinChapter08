@@ -7,10 +7,49 @@
              x:Class="ParameteredConstructorDemo.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <BoxView WidthRequest="100"
+                 HeightRequest="100"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand">
+            <BoxView.Color>
+                <Color>
+                    <x:Arguments>
+                        <x:Double>1</x:Double>
+                        <x:Double>0</x:Double>
+                        <x:Double>0</x:Double>
+                    </x:Arguments>
+                </Color>
+            </BoxView.Color>
+        </BoxView>
+
+        <BoxView WidthRequest="100"
+                 HeightRequest="100"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand">
+            <BoxView.Color>
+                <Color>
+                    <x:Arguments>
+                        <x:Double>0</x:Double>
+                        <x:Double>0</x:Double>
+                        <x:Double>1</x:Double>
+                        <x:Double>0.5</x:Double>
+                    </x:Arguments>
+                </Color>
+            </BoxView.Color>
+        </BoxView>
+
+        <BoxView WidthRequest="100"
+                 HeightRequest="100"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand">
+            <BoxView.Color>
+                <Color>
+                    <x:Arguments>
+                        <x:Double>0.5</x:Double>
+                    </x:Arguments>
+                </Color>
+            </BoxView.Color>
+        </BoxView>
     </StackLayout>
 
 </ContentPage>
